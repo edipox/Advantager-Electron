@@ -1,8 +1,8 @@
-# Skype-Electron
-An Electron Skype app designed for use on Linux systems.
+# Advantager-Electron
+An Electron Advantager app designed for use on Linux systems.
 
 ## Prerequisites
-Skype-Electron comes with a build script to compile the code for you.
+Advantager-Electron comes with a build script to compile the code for you.
 In order for the script to run, `electron-packager` must first be installed.
 
 Install `electron-packager` with the following command:
