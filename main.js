@@ -1,7 +1,7 @@
 'use strict';
 
 // Change these to customize the app
-var url = 'https://web.skype.com';
+var url = 'http://advantager.pro';
 var height = 650;
 var width = 1000;
 
