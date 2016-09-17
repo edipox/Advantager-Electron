@@ -1,5 +1,5 @@
 # Advantager-Electron
-An Electron Advantager app designed for use on Linux systems.
+An Electron Advantager app.
 
 ## Prerequisites
 Advantager-Electron comes with a build script to compile the code for you.
@@ -18,6 +18,7 @@ Then, run the build script with the following command:
 OR
 bash build.sh
 ```
+
 
 If you want to build with a version of Electron that is different from what is
 in the latest commit, open `build.sh` with your favorite text editor and change
