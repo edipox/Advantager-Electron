@@ -1,0 +1,50 @@
+html,
+header, #controls {
+    -webkit-app-region: drag;
+    -ms-overflow-style: scrollbar;
+}
+
+input,
+button,
+textarea, webview {
+    -webkit-app-region: no-drag;
+}
+
+header {
+    height: 50px;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y:hidden;
+}
+
+#controls{
+  background: rgb(62, 91, 118);
+  padding: 9px;
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+#controls button{
+  border-radius: 99px;
+  padding: 7px;
+  border: none;
+  margin: 3px;
+}
+#controls button#close-btn{
+  background: rgb(251, 92, 65);
+}
+#controls button#max-btn{
+  background: rgb(144, 238, 106);
+}
+#controls button#min-btn{
+  background: rgb(222, 195, 120);
+}
+webview{
+  height: 100%;
+  width: 100%;
+
+}
