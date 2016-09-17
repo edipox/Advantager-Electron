@@ -6,7 +6,7 @@ header, #controls {
 
 input,
 button,
-textarea, webview {
+textarea, a{
     -webkit-app-region: no-drag;
 }
 
@@ -19,11 +19,9 @@ html, body{
   margin: 0;
   width: 100%;
   height: 100%;
-  overflow-y:hidden;
 }
 
 #controls{
-  background: rgb(62, 91, 118);
   padding: 9px;
   padding-bottom: 3px;
   padding-top: 5px;
@@ -46,5 +44,4 @@ html, body{
 webview{
   height: 100%;
   width: 100%;
-
 }

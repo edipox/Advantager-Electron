@@ -2,14 +2,18 @@
 <html>
   <head>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="stars.css">
   <body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
     <div id="controls">
       <button id="close-btn"> </button>
-      <button id="max-btn"></button>
       <button id="min-btn"> </button>
+      <button id="max-btn"></button>
     </div>
-
-    <webview src="http://advantager.pro/" autosize="on" minwidth="600" minheight="800"></webview>
+    <webview src="http://advantager.pro/" autosize="on" preload="webview-load.js"  id="webview" ></webview>
   </body>
   <script src="controls.js"></script>
 </html>
