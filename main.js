@@ -17,7 +17,7 @@ app.on('ready', function() {
     frame: false,
     minWidth: size.width,
     minHeight: size.height,
-    // maxWidth: size.width,
+//     maxWidth: size.width,
     // maxHeight: size.height,
   });
 
