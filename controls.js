@@ -15,7 +15,7 @@ const toggleMaximize = function (e) {
 }
 
 document.getElementById("max-btn").addEventListener("click", toggleMaximize);
-document.getElementById("controls").addEventListener("dblclick", toggleMaximize);
+// document.getElementById("controls").addEventListener("dblclick", toggleMaximize);
 
 document.getElementById("close-btn").addEventListener("click", function (e) {
      var window = remote.getCurrentWindow();
