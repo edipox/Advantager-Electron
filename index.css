@@ -82,5 +82,7 @@ webview{
   width: 100%;
   padding-bottom: 5px;
   -webkit-app-region: no-drag;
-  margin-top: 2px;
+  padding-top: 4px;
+  background-color: #5682a3;
+  border-radius: 7px;
 }

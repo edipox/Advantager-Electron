@@ -18,7 +18,7 @@ app.on('ready', function() {
     frame: false,
     minWidth: size.width-200,
     minHeight: size.height-200,
-    radii: [5,5,5,5],
+    radii: [10,10,10,10],
     maxWidth: size.width,
     // maxHeight: size.height,
   });

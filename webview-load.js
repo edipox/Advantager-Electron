@@ -28,7 +28,12 @@ function Start() {
 
     //  applyInFlyStyle(".im_bottom_panel_wrap", "padding-bottom: 40px")
     applyInFlyStyle(".tg_head_wrap", "background: #5682a3");
-     applyInFlyStyle(".tg_head_split", "border: 2px groove #83aac7;border-top: none; border-radius: 8px 8px 0px 0px; border-bottom: 2px ridge #83aac7;background: linear-gradient(to bottom, rgba(125,185,232,0) 1%,rgba(125,185,232,0) 4%,rgba(125, 185, 232, 0) 10%,rgba(125, 185, 232, 0) 13%,rgba(72,123,160,1) 100%)")
+
+    //  old style
+    // "border: 2px groove #83aac7;border-top: none; border-radius: 8px 8px 0px 0px; border-bottom: 2px ridge #83aac7;background: linear-gradient(to bottom, rgba(125,185,232,0) 1%,rgba(125,185,232,0) 4%,rgba(125, 185, 232, 0) 10%,rgba(125, 185, 232, 0) 13%,rgba(72,123,160,1) 100%)"
+    var styleFromMacOS = "border: 2px groove #83aac7; border-top: none; border-bottom: 2px ridge #83aac7;background: linear-gradient(to bottom, rgba(125,185,232,0) 1%,rgba(125,185,232,0) 4%,rgba(125, 185, 232, 0) 10%,rgba(125, 185, 232, 0) 13%,rgba(72,123,160,1) 100%);"
+
+     applyInFlyStyle(".tg_head_split", styleFromMacOS)
      applyInFlyStyle(".tg_head_logo_wrap", "margin-left: 45px; width: 25%");
     //  applyInFlyStyle("body", );
       $.each( "a, input, textarea, button".split(", "), function(index, selector){
