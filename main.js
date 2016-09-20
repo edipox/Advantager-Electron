@@ -12,6 +12,7 @@ let quitApp = function(){ app.quit() }
 app.on('ready', function() {
   var size = { width: 1000, height: 792 };
   mainWindow = new BrowserWindow({
+    trasnparent: true,
     width: size.width,
     height: size.height,
     frame: false,
