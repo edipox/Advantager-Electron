@@ -9,10 +9,13 @@ window.setCustomTheme = function(_, theme){
   fs.readFile("./themes/"+theme+"/webview.css", 'utf8', function (err, content) {
     createOrUpdate(THEME_CONTAINER_ID, content, "style", "body")
   });
+  localStorage.setItem("custom_electron_theme", theme)
 }
 
 window.onload = function() {
-    var onReady = function() { setCustomTheme(null, "elementary"); };
+    var onReady = function() {
+      setCustomTheme(null, localStorage.getItem("custom_electron_theme") || "elementary");
+    };
     $(document).ready(onReady).on("turbolinks:load", onReady);
     $(document).on("change-theme", setCustomTheme)
 }
