@@ -1,7 +1,41 @@
 html {
   height: 100%;
-  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%)!important;
   overflow: hidden;
+}
+
+#controls{
+  padding: 9px;
+  padding-bottom: 3px;
+  padding-top: 5px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#controls button{
+  border-radius: 99px;
+  padding: 7px;
+  border: none;
+  margin: 3px;
+}
+#controls button#close-btn{
+  background: rgb(251, 92, 65);
+}
+#controls button#max-btn{
+  background: rgb(144, 238, 106);
+}
+#controls button#min-btn{
+  background: rgb(222, 195, 120);
+}
+
+#controls button#settings-btn{
+  right: 32px;
+}
+
+.stars{
+  display: block;
 }
 
 #stars {
@@ -63,4 +97,15 @@ html {
   to {
     transform: translateY(-2000px);
   }
+}
+
+webview{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5px;
+  -webkit-app-region: no-drag;
+  padding-top: 4px;
+  background-color: #5682a3;
+  border-radius: 7px;
+  margin-top: 11px;
 }

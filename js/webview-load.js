@@ -12,7 +12,7 @@ window.setCustomTheme = function(_, theme){
 }
 
 window.onload = function() {
-    var onReady = function() { setCustomTheme(null, "elementary"); };
+    var onReady = function() { setCustomTheme(null, "mac"); };
     $(document).ready(onReady).on("turbolinks:load", onReady);
     $(document).on("change-theme", setCustomTheme)
 }
