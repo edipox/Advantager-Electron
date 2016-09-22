@@ -13,11 +13,12 @@ html, body{
 }
 
 #controls{
-   border: 2px groove #83aac7;
-    border-bottom: none;
-    top: 0;
-    border-radius: 43px 99px 77px 0;
-    border-right: none;
+  border: 2px groove #83aac7;
+  border-bottom: none;
+  top: 0;
+  border-radius: 43px 99px 77px 0;
+  border-right: none;
+  background: none;
 }
 
 #headerbar-footer{

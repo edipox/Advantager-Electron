@@ -1,19 +1,19 @@
-var THEME_CONTAINER_ID = "custom_theme_container";
-fs = require('fs');
+window.setCustomTheme = function(_, theme){
+  var THEME_CONTAINER_ID = "webview_theme_container";
+  fs = require('fs');
 
-var createOrUpdate = function(id, content, type, appender){
-  $('#'+id).remove();
-  $('<'+type+' id="'+id+'">'+content+'</'+type+'>').appendTo(appender);
-}
-
-var setCustomTheme = function(theme){
-  fs.readFile("themes/"+theme+"/webview.css", 'utf8', function (err, content) {
-    console.error(err);
+  var createOrUpdate = function(id, content, type, appender){
+    $('#'+id).remove();
+    $('<'+type+' id="'+id+'">'+content+'</'+type+'>').appendTo(appender);
+  }
+  fs.readFile("./themes/"+theme+"/webview.css", 'utf8', function (err, content) {
     createOrUpdate(THEME_CONTAINER_ID, content, "style", "body")
   });
 }
 
 window.onload = function() {
-    var onReady = function() { setCustomTheme("elementary"); };
+    var onReady = function() { setCustomTheme(null, "elementary"); };
     $(document).ready(onReady).on("turbolinks:load", onReady);
+    $(document).on("change-theme", setCustomTheme)
 }
+require('electron').ipcRenderer.on('change-theme', setCustomTheme);
