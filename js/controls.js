@@ -49,7 +49,7 @@ jq(document).on("change", "#theme-selector", function(e) {
     var theme = jq(e.target).find("option:selected").text();
     setCustomTheme(theme)
 })
-var onReady = function(){ setCustomTheme("mac") };
+var onReady = function(){ setCustomTheme("elementary") };
 jq(document).ready(onReady).on("turbolinks:load", onReady);
 
 // hack because of reasons
