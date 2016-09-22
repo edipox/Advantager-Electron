@@ -7,7 +7,7 @@ var createOrUpdate = function(id, content, type, appender){
 }
 
 var setCustomTheme = function(theme){
-  fs.readFile("themes/webview/"+theme+".css", 'utf8', function (err, content) {
+  fs.readFile("themes/"+theme+"/webview.css", 'utf8', function (err, content) {
     console.error(err);
     createOrUpdate(THEME_CONTAINER_ID, content, "style", "body")
   });
