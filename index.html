@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="index.css">
-    <!-- <link rel="stylesheet" href="stars.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="themes/window/elementary.css">
   <body>
-    <!-- <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div> -->
-    <webview src="https://web.telegram.org" autosize="on" preload="webview-load.js"  id="webview" ></webview>
+    <div id="stars" class="stars"></div>
+    <div id="stars2" class="stars"></div>
+    <div id="stars3" class="stars"></div>
+    <webview src="https://web.telegram.org" autosize="on" preload="js/webview-load.js"  id="webview" plugins ></webview>
     <div id="controls">
       <button id="close-btn"></button>
-      <button id="min-btn" style="display:none"> </button>
-      <button id="max-btn" style="display:none"></button>
+      <button id="min-btn" > </button>
+      <button id="max-btn" ></button>
     </div>
     <div id="headerbar-footer"></div>
   </body>
-  <script src="controls.js"></script>
+  <script src="js/controls.js"></script>
 </html>

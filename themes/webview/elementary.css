@@ -1,0 +1,27 @@
+a, input, textarea, button {
+    -webkit-app-region: no-drag!important;
+}
+
+body {
+    -webkit-app-region: drag!important;
+}
+
+.tg_head_wrap {
+    background: #5682a3!important;
+}
+
+.tg_head_split {
+    border: 2px groove #83aac7!important;
+    border-top: none!important;
+    border-bottom: 2px ridge #83aac7!important;
+    background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 1%, rgba(125, 185, 232, 0) 4%, rgba(125, 185, 232, 0) 10%, rgba(125, 185, 232, 0) 13%, rgba(72, 123, 160, 1) 100%)!important;
+}
+
+.tg_head_logo_wrap {
+    margin-left: 45px!important;
+    width: 25%!important;
+}
+
+a, input, textarea, button {
+    -webkit-app-region: no-drag!important
+}
