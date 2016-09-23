@@ -13,8 +13,8 @@ app.on('ready', function() {
   var size = { width: 1000, height: 792 };
   mainWindow = new BrowserWindow({
     trasnparent: true,
-    width: size.width,
-    height: size.height,
+    width: size.width-200,
+    height: size.height-200,
     frame: false,
     minWidth: size.width-200,
     minHeight: size.height-200,
